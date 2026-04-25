@@ -2,130 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Aesthete Preview — The Wood Duck and the Cavity Tree</title>
+<title>Aesthete Content Agent — Preview Index</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  :root {
-    --bg: #EFE7D4; --panel: #E3DAC3; --fg: #18140E;
-    --fg-soft: #18140EB3; --fg-mute: #18140E80; --fg-hair: #18140E33;
-    --serif: "Cormorant Garamond", "Times New Roman", serif;
-    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  }
-  * { box-sizing: border-box; }
-  body { background: var(--bg); color: var(--fg); font-family: var(--serif); margin: 0; padding: 0; line-height: 1.5; }
-  .wrap { max-width: 920px; margin: 0 auto; padding: 56px 24px 100px; }
-  .label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-mute); margin: 0 0 8px; }
-  .section { border-top: 1px solid var(--fg-hair); padding-top: 40px; margin-top: 56px; }
-  .section:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
-  h1 { font-size: 44px; font-weight: 400; line-height: 1.15; margin: 0 0 12px; font-style: italic; }
-  h2 { font-size: 28px; font-weight: 400; margin: 0 0 12px; font-style: italic; }
-  .subtitle { font-size: 19px; color: var(--fg-soft); font-style: italic; margin: 0 0 24px; }
-  .hero { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: var(--panel); margin: 24px 0; padding: 40px; box-shadow: 0 12px 48px rgba(0,0,0,0.12); }
-  .body p { font-size: 18px; line-height: 1.7; margin: 0 0 1.2em; color: var(--fg); }
-  .meta-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 12px 24px; font-family: var(--mono); font-size: 12px; }
-  .meta-grid dt { color: var(--fg-mute); text-transform: uppercase; letter-spacing: 0.1em; }
-  .meta-grid dd { margin: 0; color: var(--fg); word-break: break-word; }
-  .ig-card { background: white; max-width: 540px; margin: 0 auto; border: 1px solid var(--fg-hair); border-radius: 8px; overflow: hidden; }
-  .ig-card__img { width: 100%; aspect-ratio: 1; object-fit: contain; background: var(--panel); padding: 8%; display: block; }
-  .ig-card__body { padding: 16px 18px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; font-size: 14px; line-height: 1.4; color: #262626; }
-  .ig-card__user { font-weight: 600; }
-  .ig-card__caption { margin-top: 6px; }
-  .caption-block { background: var(--panel); padding: 18px 20px; margin-bottom: 16px; }
-  .caption-block .label { margin-bottom: 6px; }
-  .caption-block p { margin: 0; font-size: 16px; line-height: 1.5; }
-  .hashtags { font-family: var(--mono); font-size: 11px; color: var(--fg-mute); margin-top: 12px; }
-  .nl { background: var(--panel); padding: 24px 28px; }
-  .nl p { font-size: 16px; line-height: 1.6; margin: 0; }
-  .x-post { background: #000; color: white; padding: 18px 22px; max-width: 540px; border-radius: 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
-  .x-post__head { font-family: -apple-system, sans-serif; font-size: 14px; margin-bottom: 8px; }
-  .x-post__head strong { color: white; }
-  .x-post__head .at { color: #71767b; }
-  .x-post__body { font-size: 15px; line-height: 1.4; white-space: pre-wrap; }
-  .seo-preview { background: white; padding: 16px 20px; border: 1px solid var(--fg-hair); max-width: 600px; }
-  .seo-preview__title { color: #1a0dab; font-size: 18px; font-family: arial, sans-serif; margin: 0; }
-  .seo-preview__url { color: #006621; font-size: 13px; font-family: arial, sans-serif; margin: 2px 0 4px; }
-  .seo-preview__desc { color: #545454; font-size: 13px; font-family: arial, sans-serif; line-height: 1.4; margin: 0; }
-  .placeholder { background: var(--panel); border: 1px dashed var(--fg-hair); padding: 16px 20px; font-family: var(--mono); font-size: 12px; color: var(--fg-mute); }
+  :root { --bg:#EFE7D4; --panel:#E3DAC3; --fg:#18140E; --fg-soft:#18140EB3; --fg-mute:#18140E80; --fg-hair:#18140E33; --serif:"Cormorant Garamond","Times New Roman",serif; --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace; }
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--fg);font-family:var(--serif);margin:0;padding:60px 24px 100px;line-height:1.5;}
+  .wrap{max-width:720px;margin:0 auto;}
+  h1{font-size:44px;font-weight:400;font-style:italic;margin:0 0 12px;}
+  .label{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--fg-mute);margin:0 0 12px;}
+  .lede{font-size:17px;color:var(--fg-soft);line-height:1.6;margin:0 0 48px;}
+  ul{list-style:none;padding:0;margin:0;}
+  li{border-top:1px solid var(--fg-hair);padding:28px 0;}
+  li:last-child{border-bottom:1px solid var(--fg-hair);}
+  a{color:var(--fg);text-decoration:none;display:block;}
+  a:hover h2{text-decoration:underline;text-underline-offset:4px;}
+  h2{font-size:28px;font-weight:400;font-style:italic;margin:0 0 8px;display:inline;}
+  .meta{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;color:var(--fg-mute);margin:6px 0 0;}
+  .num{font-family:var(--mono);font-size:11px;color:var(--fg-mute);margin-right:8px;}
 </style>
 </head>
 <body>
 <div class="wrap">
-
-  <div class="section">
-    <p class="label">Aesthete · Generated draft preview · 2026-04-25</p>
-    <p class="label">Slot: monday · Audience: general · Hook: Earth Day — broad reflection across all 31 kingdoms</p>
-  </div>
-
-  <div class="section">
-    <p class="label">Blog post — Shopify Journal</p>
-    <h1>The Wood Duck and the Cavity Tree</h1>
-    <p class="subtitle">A duck that climbs, nests thirty feet up, and wears one of the most extravagant coats on the continent.</p>
-    <img class="hero" src="https://aesthetelife.org/cdn/shop/t/13/assets/WoodDuck.png" alt="Wood Duck pocket art — hand-painted by Aesthete">
-    <div class="body"><p>The Wood Duck (<em>Aix sponsa</em>) drake is one of the hardest birds on the continent to look away from. Iridescent green helm combed into a crest, a clean white chinstrap, russet breast flecked with small white teardrops, flanks the color of buff leather. His eye is arterial red. On a cold slough at first light, he sits motionless on a submerged log and looks more like an heirloom than a living thing.</p><p>Earth Day passed this week — a useful moment to remember that the Wood Duck was nearly shot out of North America by 1918, then brought back through cavity nest boxes, hunting limits, and the Migratory Bird Treaty. The recovery is one of the quieter wins of the last century.</p><p>Wood Ducks are among the only North American ducks that nest in trees. The hen, more soberly plumed in gray-brown with a white teardrop ring around the eye, seeks out a cavity thirty feet up — an old pileated woodpecker hole, a lightning scar, a hollow in a cottonwood or a sycamore over water. She lays ten to fifteen eggs in the wood dust at the bottom. There is no lining, no down, until she plucks her own breast feathers later.</p><p>Within twenty-four hours of hatching, the ducklings have to come down. The hen stands at the cavity rim and calls — a thin <em>kuk-kuk-kuk</em> up into the dark of the hollow — and one by one the ducklings climb to the lip with their claws (they have claws), stand on the edge for a second, and jump. They fall the full thirty feet and bounce on the forest floor, unhurt. Then they follow her, on foot, to water.</p><p>This is routine. It happens every spring across the forested wetlands of North America, in the same quiet undrama as frogs returning to a pond. Few people see it. The hen's call is soft, the ducklings move at dawn, and the tree is never a place you'd think to look up into.</p><p>The drake's plumage, extravagant as it is, is a spring costume. He molts into a drab eclipse coat by mid-summer, nearly female-colored, and spends the rest of the year quiet. The green helm is for a few months only — for courtship, for the display on still water in late winter when pairs form. If you want to see him at his full weight of color, go out between February and May, on any slow river with overhanging oaks, at the hour when the light is still coming through sideways.</p><p>The pocket on this tee is the drake in full courtship plumage. Painted by hand, at the size of the pocket, in Procreate — layer over layer, green over black over russet, with the white teardrops on the breast done last. The species was chosen because it is one of the quiet astonishments of North American wildlife: a duck that climbs, a duck that nests like an owl, a bird so ornamental that the first European painters of the continent assumed it was an import.</p><p>Stand under the trees along any wooded slough in April. Look up. Listen for a soft whistling overhead. The Wood Duck passes through the canopy faster than you'd believe a duck could move.</p></div>
-  </div>
-
-  <div class="section">
-    <p class="label">Instagram captions — 3 variants</p>
-
-    <div class="caption-block">
-      <p class="label">Poetic</p>
-      <p>A green helm at first light. White chinstrap, russet breast flecked with teardrops, an eye the color of arterial red. He sits on a submerged log and barely seems to breathe. Wood Duck — Aix sponsa.</p>
-    </div>
-    <div class="caption-block">
-      <p class="label">Educational</p>
-      <p>Wood Ducks nest thirty feet up in tree cavities — old woodpecker holes, lightning scars, hollow sycamores over water. The ducklings have claws. Within a day of hatching, they climb to the rim and leap to the forest floor, then walk to water in a line behind the hen. The pocket is the drake in full courtship plumage, Aix sponsa.</p>
-    </div>
-    <div class="caption-block">
-      <p class="label">Question-starter</p>
-      <p>When was the last time you looked up into a tree for a duck? The Wood Duck nests thirty feet off the ground and walks its hatchlings down to the water. Where have you seen one in full spring plumage?</p>
-    </div>
-    <div class="hashtags">#WoodDuck · #AixSponsa · #Waterfowl · #Birding · #NatureTee · #FieldJournal · #WildlifeArt</div>
-  </div>
-
-  <div class="section">
-    <p class="label">Instagram post mockup — feed preview</p>
-    <div class="ig-card">
-      <img class="ig-card__img" src="https://aesthetelife.org/cdn/shop/t/13/assets/WoodDuck.png" alt="">
-      <div class="ig-card__body">
-        <div class="ig-card__user">aesthetelife</div>
-        <div class="ig-card__caption">A green helm at first light. White chinstrap, russet breast flecked with teardrops, an eye the color of arterial red. He sits on a submerged log and barely seems to breathe. Wood Duck — Aix sponsa.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <p class="label">Newsletter blurb</p>
-    <div class="nl">
-      <p>This week's field tag is the Wood Duck — Aix sponsa — one of the only North American ducks that nests in trees. The drake wears a green helm, a white chinstrap, and a russet breast flecked with teardrops. The hen climbs to a cavity thirty feet up and lays her eggs in the wood dust. Within a day of hatching, the ducklings leap to the forest floor and follow her on foot to water. A species nearly lost a century ago, common again in wooded sloughs from Texas to Ontario. Full story on the blog.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <p class="label">X post (Grok output — placeholder if XAI_API_KEY not set)</p>
-    <div class="placeholder">No XAI_API_KEY was set for this run. The Grok-drafted X post would appear here. Set the env var to enable this output.</div>
-  </div>
-
-  <div class="section">
-    <p class="label">SEO preview — Google search result</p>
-    <div class="seo-preview">
-      <p class="seo-preview__url">https://aesthetelife.org/blogs/news/2026-04-25-woodduck</p>
-      <p class="seo-preview__title">Wood Duck (Aix sponsa): The Tree-Nesting Drake | Aesthete</p>
-      <p class="seo-preview__desc">The Wood Duck drake wears a green helm and russet breast; the hen nests thirty feet up in a tree hollow. Pocket tee painted at pocket scale by the studio.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <p class="label">Run metadata</p>
-    <dl class="meta-grid">
-      <dt>Species</dt><dd>Wood Duck (<em>Aix sponsa</em>)</dd>
-      <dt>Audience</dt><dd>general</dd>
-      <dt>Season hook</dt><dd>Earth Day — broad reflection across all 31 kingdoms</dd>
-      <dt>Generated</dt><dd>2026-04-25T02:18:37.316Z</dd>
-      <dt>SEO title length</dt><dd>57 chars</dd>
-      <dt>SEO desc length</dt><dd>154 chars</dd>
-    </dl>
-  </div>
-
+  <p class="label">Aesthete content agent · Generated drafts · 2026-04-25</p>
+  <h1>Voice gut-check</h1>
+  <p class="lede">Three drafts across three kingdoms (bird, bird with cultural weight, insect) to confirm the voice holds. All generated by the Opus chain in one Monday slot. Click any to read.</p>
+  <ul>
+    <li><a href="wood-duck.html"><span class="num">№ 001</span><h2>Wood Duck</h2><p class="meta">Drake-led · Earth Day hook · 600 words</p></a></li>
+    <li><a href="indian-peafowl.html"><span class="num">№ 004</span><h2>Indian Peafowl</h2><p class="meta">Train-not-tail correction · cultural context · 580 words</p></a></li>
+    <li><a href="monarch-butterfly.html"><span class="num">№ 005</span><h2>Monarch Butterfly</h2><p class="meta">Migration biology · cryptochromes + decline · 550 words</p></a></li>
+  </ul>
 </div>
 </body>
 </html>
